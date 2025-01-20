@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+    color: #333; 
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4; 
+}
+
+#nav {
+    height: 21vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 150px;
+    gap: 45px;
+    background-color: #95c11e; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#nav h4 a {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+#nav h4 a:hover {
+    color: #51be88; 
+}
+
+#nav img {
+    height: 75px;
+    background-color: #1A7431;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#main-box {
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    gap: 30px;
+    display: flex;
+    align-items: normal;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fff; 
+}
+
+.pro-box {
+    flex-basis: calc(25% - 30px);
+    height: 400px;
+    background-color: #ffffff; 
+    border: 3px solid #81C784; 
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.pro-box:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pro-box img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+    border-radius: 5px 5px 0 0;
+}
+
+.pro-box h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1A7431;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.pro-box p {
+    font-size: 14px;
+    color: #333; 
+    padding: 0 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.pro-box button {
+    background-color: #81C784;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pro-box button:hover {
+    background-color: #558B2F; 
+    transform: scale(1.1);
+}
+
+.pro-box h3 {
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 15px;
+    color: #333; 
+    text-align: center;
+    margin-top: 10px;
+}
